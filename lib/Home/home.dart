@@ -229,7 +229,7 @@ void _showDialog(BuildContext context) {
                   onPressed: () {
                     Navigator.push(context, MaterialPageRoute(builder: (context) =>AvatarMakerScreen()));
                   },
-                  child: Text('Custum Avatar '),
+                  child: Text('Custom Avatar '),
                 ),
                 ElevatedButton(
                   onPressed: () {
