@@ -34,12 +34,12 @@ class _AvatarGeneratorPageState extends State<AvatarGeneratorPage> {
               'Generate Your Avatar',
               style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
             ),
-            SizedBox(height: 20.0),
+            SizedBox(height: 10.0),
             CircleAvatar(
               radius: 100,
               backgroundImage:AssetImage('assets/user_profile.jpg'), // Placeholder image asset
             ),
-            SizedBox(height: 20.0),
+            SizedBox(height: 10.0),
             SizedBox(
               width: double.infinity,
               height: 50.0,
@@ -60,7 +60,7 @@ class _AvatarGeneratorPageState extends State<AvatarGeneratorPage> {
                 ),
               ),
             ),
-            SizedBox(height: 20.0),
+            SizedBox(height: 10.0),
             SizedBox(
               width: double.infinity,
               height: 50.0,

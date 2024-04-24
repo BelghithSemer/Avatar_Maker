@@ -93,6 +93,7 @@ class MainPage extends StatelessWidget {
           children: [
             SizedBox(height: 20), // Add some spacing
             Container(
+
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 gradient: LinearGradient(
@@ -108,7 +109,7 @@ class MainPage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      'Hi Semer',
+                      'Hi Rached',
                       style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
@@ -116,11 +117,15 @@ class MainPage extends StatelessWidget {
                       ),
                     ),
                     SizedBox(height: 8),
-                    Text(
-                      'Tap to chat',
-                      style: TextStyle(
-                        fontSize: 16,
-                        color: Colors.white,
+                    TextButton(
+                      onPressed: () {
+                        _showDialog(context);
+                      },
+                      child: Text('Tap to chat',
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: Colors.white,)
+
                       ),
                     ),
                     SizedBox(height: 8),
@@ -137,25 +142,7 @@ class MainPage extends StatelessWidget {
             ),
 
             SizedBox(height: 20), // Add some spacing
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                ElevatedButton(
-                  onPressed: () {
-                    // Handle button tap
-                  },
-                  child: Text('Custum Avatar '),
 
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    // Handle button tap
-                  },
-                  child: Text('Local Avatar'),
-                ),
-              ],
-            ),
-            SizedBox(height: 20),
             Row(
 
               children: [
@@ -192,7 +179,7 @@ class MainPage extends StatelessWidget {
                         ],
                       ),
                       onTap: () {
-                        _showDialog(context);
+                        //_showDialog(context);
                       },
 
                     ),
